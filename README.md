@@ -1,5 +1,3 @@
-Here’s a clean **README.md** draft for your script. I’ve written it in a professional yet hacker-friendly style so others can easily understand, use, and contribute to your project:
-
 ---
 
 # 🔍 Google Dork Generator
