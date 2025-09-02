@@ -51,18 +51,24 @@ def generate_dork_queries(site):
 
 
 def main():
-    site = input("Enter the site/domain (without 'www.'): ")
+    # Print developer info
+    print("\n")
+    print("\033[96m@trashz403\033[0m")  # cyan
+    print("\033[91mGitHub:\033[0m https://github.com/trashz403\n\n")  # red
 
-    # Print plain queries first
-    print("\nGenerated Google dork queries:\n")
+
+    site = input("Enter the site/domain (without 'www.'): ")
     queries = generate_dork_queries(site)
+
+    # First print queries normally
+    print("\n\n\nGenerated Google dork queries:\n")
     for q in queries:
         print(q)
 
-    # Print URLs afterwards
-    print("\nClickable Google search URLs:\n")
-    for idx, query in enumerate(queries, 1):
-        encoded = urllib.parse.quote(query)
+    # Then print URLs
+    print("\n\n\nGenerated Google dork clickable URLs:\n")
+    for idx, q in enumerate(queries, 1):
+        encoded = urllib.parse.quote(q)
         url = f"https://www.google.com/search?q={encoded}"
         print(f"{idx}. {url}")
 
