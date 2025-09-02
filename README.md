@@ -1,5 +1,5 @@
 
-# 🔍 Google Dork Generator
+# 🔍 1mpD0rkY – Google Dork Generator
 
 A Python tool that helps penetration testers and bug bounty hunters generate **Google Dork queries** for a given target domain.
 It prints both the raw queries and clickable Google search URLs so you can directly open them in your browser.
@@ -23,14 +23,14 @@ It prints both the raw queries and clickable Google search URLs so you can direc
 1. Clone this repo:
 
    ```bash
-   git clone https://github.com/trashz403/google-dork-generator.git
-   cd google-dork-generator
+   git clone https://github.com/trashz403/1mpD0rkY.git
+   cd 1mpD0rkY
    ```
 
 2. Run the script:
 
    ```bash
-   python3 dork_generator.py
+   python3 1mpD0rkY.py
    ```
 
 3. Enter the target domain (without `www.`):
@@ -77,7 +77,7 @@ Want to improve this tool? You can contribute by:
 To contribute:
 
 1. Fork this repo
-2. Add your dork queries in the `dork_templates` list inside `dork_generator.py`
+2. Add your dork queries in the `dork_templates` list inside `1mpD0rkY.py`
 3. Create a pull request with your changes
 
 ---
@@ -95,4 +95,6 @@ The author is not responsible for any misuse of this script.
 * **@trashz403**
 * GitHub: [https://github.com/trashz403](https://github.com/trashz403)
 
+---
 
+Do you also want me to add a **Preview Screenshot** (example terminal output) section in the README so the repo looks more attractive on GitHub?
