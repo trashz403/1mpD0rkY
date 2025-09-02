@@ -1,3 +1,4 @@
+---
 
 # 🔍 1mpD0rkY – Google Dork Generator
 
