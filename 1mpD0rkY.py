@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import urllib.parse
 
 def generate_dork_queries(site):
     dork_templates = [
@@ -19,6 +19,8 @@ def generate_dork_queries(site):
         'site:{} inurl:"cat="',
         'site:{} inurl:"query="',
         'site:{} inurl:"keyword="',
+
+        # New advanced ones
         'site:{} (ext:env | ext:log | ext:bak | ext:sql | ext:zip | ext:conf | ext:ini) '
         '(intext:"db_password" | intext:"password" | intext:"authorization" | intext:"api_key" | intext:"private key") -stackoverflow -github',
 
@@ -45,14 +47,16 @@ def generate_dork_queries(site):
 
         'site:{} intitle:"index of" ".svn"',
     ]
-    return [dork.format(site) if '{}' in dork else dork for dork in dork_templates]
+    return [dork.format(site) for dork in dork_templates]
 
 
 def main():
-    site = input("Enter the site/domain (without 'www.' or TLD, e.g., 'example'): ")
-    print("\nGenerated Google dork queries:\n")
-    for query in generate_dork_queries(site):
-        print(query)
+    site = input("Enter the site/domain (without 'www.'): ")
+    print("\nGenerated Google dork clickable URLs:\n")
+    for idx, query in enumerate(generate_dork_queries(site), 1):
+        encoded = urllib.parse.quote(query)
+        url = f"https://www.google.com/search?q={encoded}"
+        print(f"{idx}. {url}")
 
 
 if __name__ == "__main__":
