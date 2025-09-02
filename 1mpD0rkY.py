@@ -11,6 +11,13 @@ def generate_dork_queries(site):
         'site:{}.com inurl:"&title="',
         'site:{}.com inurl:".php?words="',
         'site:{}.com inurl:"query.php" intext:"search"',
+        'site:{}.com inurl:q= | inurl:s= | inurl:search=',
+        'site:{}.com inurl:"url="',
+        'site:{}.com inurl:"id="',
+        'site:{}.com inurl:"category="',
+        'site:{}.com inurl:"cat="',
+        'site:{}.com inurl:"query="',
+        'site:{}.com inurl:"keyword="',
     ]
     return [dork.format(site) for dork in dork_templates]
 
