@@ -97,5 +97,3 @@ The author is not responsible for any misuse of this script.
 * GitHub: [https://github.com/trashz403](https://github.com/trashz403)
 
 ---
-
-Do you also want me to add a **Preview Screenshot** (example terminal output) section in the README so the repo looks more attractive on GitHub?
