@@ -1,4 +1,3 @@
----
 
 # 🔍 Google Dork Generator
 
@@ -96,6 +95,4 @@ The author is not responsible for any misuse of this script.
 * **@trashz403**
 * GitHub: [https://github.com/trashz403](https://github.com/trashz403)
 
----
 
-Do you want me to also add a **section with example advanced dorks** (like `.git` leaks, exposed DBs, `.env` files, etc.) inside the README so contributors see the style and can add more easily?
