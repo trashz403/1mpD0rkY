@@ -15,7 +15,7 @@ It prints both the raw queries and clickable Google search URLs so you can direc
 
   * Plain text queries (for copy-paste).
   * Direct Google search URLs (clickable links).
-* Developer credit shown at the start (`@trashz403`).
+* Dev: (`@trashz403`).
 
 ---
 
